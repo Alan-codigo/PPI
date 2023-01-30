@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    FORMULARIOS
+
+        ACTION ES PARA MANDAR LAS COSAS
+        METHOD TENEMOS GET Y POST
+        ES MAS SEGURO EL METODO POST
+        SE PUSE PONER NAME O ID
+        EL ID ES UNICO  
+
+        LO QUE SE ENVIA ES EL VALUE
+-->
+
+    <form>
+        <input type="text" name="nombre" id="nombre" placeholder="escribe tu usuario"><br>
+        
+        <input type="text" name="contra" id="contra" value="" placeholder="Escribe una contrasenia"><br>
+        
+        <select name="rol" id="rol">
+            <option value=0>Selecciona</option>
+            <option value="1">Gerente</option>
+            <option value="2">Ejecutivo</option>
+        </select>
+        
+        <br>
+
+        <input type="SUBMIT" onclick="comprobar()" value="enviar" >
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
