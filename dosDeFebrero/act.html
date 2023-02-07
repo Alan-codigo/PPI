@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+
+    <style>
+        /*
+
+        */
+        #mensaje{
+            color: #f00;
+            font-size: 18px;
+            font-weight: bold;
+            width: 224px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #CCC;
+            text-align: center;
+        }
+
+        .alumno{
+            color:#0066cc;
+            line-height: 22px;
+        }
+
+        .maestro{
+            color: #005a1f;
+            line-height: 22px;
+        }
+
+        .reprobado{
+            color: #FFF;
+            background-color: #FF0000;
+        }
+
+    </style>
+
+    <script>
+        // settimeout "codigo", tiempo;
+        function eliminaAlumno(){
+            $('.alumno').hide();
+            $('#mensaje').html('Tu registro fue eliminado');
+            setTimeout("$('#mensaje').html('');",5000)
+        }
+
+        
+        function eliminaMaestro(){
+            $('.maestro').hide();
+            $('#mensaje').html('Tu registro fue eliminado');
+            setTimeout("$('#mensaje').html('');",5000)
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="alumno"> RUBEN MALDONADO </div>
+        <div class="alumno reprobado"> AARON JIMENEZ </div>
+        <div class="alumno "> MARISELA GUZMAN </div>
+        <div class="maestro"> PRATICIA LOPEZ </div>
+        <div class="maestro"> LUIS CASILLAS </div>
+        <input type="submit" value="Eliminar" onclick="eliminaAlumno()" >
+        <div id="mensaje"></div>
+    </div>
+
+    <SCript src="act.js"></SCript>
+</body>
+</html>
