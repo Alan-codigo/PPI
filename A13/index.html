@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <style>
+            .general{
+            border: 1px solid black; 
+            width: 100%; 
+            height: 558px;
+            }
+            .titulo{
+            border: 1px solid black; 
+            width: 100%; 
+            height: 50px;
+            text-align: center;
+            font-size: xx-large;
+            }
+            .fila{
+            border: 1px solid black; 
+            width: 100%;
+            height: 100px;
+            display: flex;            
+            }
+            .bloque{
+            border: 1px solid black; 
+            width: 33%; 
+            height: 100px;
+            text-align: center;
+            }
+            .boton{
+                margin-top: 25%;
+
+            }
+            .fotos{
+                height: 100%;
+                width: 100%;
+            }
+    </style>
+    <title>A14</title>
+</head>
+<body>
+<div class="general">
+    <div class="titulo">TABLA CON IMAGENES</div>
+    <div class="fila"  id="1" >
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/ciudad-hombre-gente-arte-13233270/"><img class="fotos" src="i1.jpg" alt=""></a></div>
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/ciudad-hombre-gente-arte-13233270/">IMAGEN 1</a></div>
+        <div> <button type="button" class="boton" onclick="ocultar(1)"> Click aquí para eliminar</button></div>
+    </div>
+    <div class="fila"  id="2" >
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/ligero-ciudad-gente-arte-15119320/"><img class="fotos" src="i2.jpg" alt=""></a></div>
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/ligero-ciudad-gente-arte-15119320/">IMAGEN 2</a></div>
+        <div> <button type="button" class="boton"  onclick="ocultar(2)" > Click aqui para eliminar</button></div>
+    </div>
+    <div class="fila"  id="3" >
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/blanco-y-negro-gente-agua-calle-15521847/"><img class="fotos" src="i3.jpg" alt=""></a></div>
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/blanco-y-negro-gente-agua-calle-15521847/">IMAGEN 3</a></div>
+        <div> <button type="button" class="boton"  onclick="ocultar(3)" > Click aqui para eliminar</button></div>
+    </div>
+    <div class="fila"  id="4" >
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/banco-ligero-blanco-y-negro-ciudad-14653965/"><img class="fotos" src="i4.jpg" alt=""></a></div>
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/banco-ligero-blanco-y-negro-ciudad-14653965/">IMAGEN 4</a></div>
+        <div> <button type="button" class="boton"  onclick="ocultar(4)" > Click aqui para eliminar</button></div>
+    </div>
+    <div class="fila"  id="5" >
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/blanco-y-negro-ciudad-urbano-fachada-13208656/"><img class="fotos" src="i5.jpg" alt=""></a></div>
+        <div class="bloque"><a href="https://www.pexels.com/es-es/foto/blanco-y-negro-ciudad-urbano-fachada-13208656/">IMAGEN 5</a></div>
+        <div> <button type="button" class="boton" onclick="ocultar(5)" > Click aqui para eliminar</button></div>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+
+<script src="../jquery-3.3.1.min.js"></script>
+
+<script>
+    function ocultar(x){
+        let elemento = "#" + x;
+
+        opc = confirm()
+        if(opc == true){
+            $(elemento).hide();
+        }else{
+            return;
+        }
+    }
+</script>
+
+
+</html>
